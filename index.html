@@ -14,47 +14,43 @@
 
 <body>
     <nav>
-            <a id="moto" href="https://www.motorola.com/nl/">
+            <a id="moto" href="https://www.motorola.com/nl/" target="_blank">
                 <img id="moto-logo" src="images/motorola-logo.png" alt="motorola-logo">
             </a>
         <div class="nav-links">
-            <div class="nav-regular">
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </div>
-            <div class="nav-bold">
-                <a href="#">Link</a>
-            </div>
+                <a href="https://www.motorola.com/nl/smartphones/d" target="_blank">Smartphones</a>
+                <a href="https://www.motorola.in/moto-tab-g70-lte/p?skuId=240" target="_blank">Tablets</a>
+                <a href="https://www.motorola.com/nl/accessories/power---charging" target="_blank">Opladers</a>
+                <a href="https://www.motorola.com/nl/accessories/cases---protection" target="_blank">Hoesjes</a>
+                <a href="https://www.motorola.com/nl/Wearables/d" target="_blank">Smartwatches</a>
         </div>
 
     </nav>
 
     <header>
         <div class="headline">
-            <h1>3 nieuwe smartphones zijn gereleased!</h1>
-            <p>van apple tot samsung: wooohoooooooo crazyyyyyyyyyyy Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt voluptatum, modi accusantium alias nemo harum omnis corporis delectus architecto aliquid possimus qui ad laboriosam eaque vel corrupti quae tempore.</p>
+            <h1>Nieuwe smartphone reviews</h1>
+            <p>Deze week hebben wij 3 nieuwe smartphones gereviewd. Apple, Samsung en Motorola stonden deze week op het programma en het zijn zeker niet de minste. Ontdek hier de verassingen die wij tegen zin gekomen tijdens het revieuwen van deze smartphones, of meld je aan op onze form!</p>
         </div>
-        <div class="nav-bold">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+        <div class="nav-links">
+            <a href="#form">Aanmelden</a>
+            <a href="#reviews">Revieuws</a>
 
         </div>
 
     </header>
 
     <main>
-        <h2>You might also like:</h2>
+        <h2 id="reviews">Reviews</h2>
         <div class="articles">
             <article id="article-1">
                 <div class="article-img">
-                    <img src="images/15promax.jpg" alt="pic-article-1">
+                    <img src="images/pixel8pro.jpg" alt="pic-article-1">
                 </div>
-                <h3>Iphone 15 pro max</h3>
-                <div class="stars">&starf; &starf; &star; &star; &star;</div> 
-                <p>Wat is er veranderd aan de iphone 15 pro max ten opzichte van zijn voorganger? Voor specs, review en camera samples moet je hier zijn.</p>
-                <a href="#">Bekijk</a>
+                <h3>Pixel 8 pro</h3>
+                <div class="stars">&starf; &starf; &starf; &starf; &star;</div> 
+                <p>Renovatieve camerafuncties, bijzondere AI capibiliteiten en een mooi amoled scherm met kleine randen: ontdek het in onze review van de Google Pixel 8 pro.</p>
+                <a href="https://www.tomsguide.com/reviews/google-pixel-8-pro" target="_blank">Bekijk</a>
             </article>
             <article id="article-2">
                 <div class="article-img">
@@ -62,8 +58,8 @@
                 </div>
                 <h3>Motorola edge 40 pro</h3>
                 <div class="stars">&starf; &starf; &starf; &starf; &starf;</div> 
-                <p>Wil je meer over de razendsnelle Motorola edge 40 pro weten? klik dan op bekijk voor alle specs en de meest recente updates over dit toestel.</p>
-                <a href="#">Bekijk</a>
+                <p>165hz curved pOled scherm, 125W snelladen en clean software met oplader in de doos: bekijk hier onze volledige review van de Motorola edge 40 pro.</p>
+                <a href="https://www.androidplanet.nl/reviews/motorola-edge-40-pro-review/" target="_blank">Bekijk</a>
             </article>
             <article id="article-3">
                 <div class="article-img">
@@ -71,8 +67,8 @@
                 </div>
                 <h3>Samsung galaxy s23 ultra</h3>
                 <div class="stars">&starf; &starf; &starf; &star; &star;</div> 
-                <p>Is de Samsung galaxy s23 ultra de beste Android smartphone van 2023? Leer meer!</p>
-                <a href="#">Bekijk</a>
+                <p>Is de op eerste gezicht belachelijke prijs van dit toestel het waard? Bekijk hier onze review van de Samsung Galaxy s23 ultra.</p>
+                <a href="https://www.androidplanet.nl/reviews/samsung-galaxy-s23-ultra-review/" target="_blank">Bekijk</a>
             </article>
         </div>
 
@@ -102,12 +98,12 @@
                 </div>
                 <div class="formfield">
                     <label for="birthdate">Datum</label>
-                    <input type="date" id="birthdate" name="birthdate">
+                    <input type="date" id="birthdate" name="birthdate" required>
                 </div>
             </div>
                 <div class="whole-width">
                 <label for="phones">Kies een smartphone</label>
-                    <select id="phones" name="phones">
+                    <select id="phones" name="phones" required>
                         <option value="" disabled selected>Kies een smartphone</option>
                         <option value="moto">Motorola edge 40 pro</option>
                         <option value="iphone">Apple Iphone 15 pro max</option>
@@ -116,7 +112,7 @@
                 </div>
                 <div class="whole-width">  
                     <label for="message">Bericht</label>
-                    <input type="text" id="message" name="message">
+                    <input type="text" id="message" name="message" required>
                 </div>
                 
                 <label for="newsletter">Inschijven voor nieuwsbrief?</label>
@@ -128,8 +124,8 @@
                     <input type="radio" id="yes" name="newsletter" value="yes">
                     <label for="yes">Ja</label>
                 </div>
-                <input type="checkbox" id="terms" name="terms" value="terms">
-                <label for="terms">Ik ga akkoord met de voorwaarden</label>
+                <input type="checkbox" id="terms" name="terms" value="terms" required>
+                <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
                 
                 <div id="submit-button"> 
                     <button type="submit">Aanmelden</button>
@@ -156,17 +152,17 @@
             <a id="icon0" class="fa-solid fa-phone fa-lg" style="color: rgb(210, 255, 210);"></a>
             <p>Copyright 2023 Daan</p>
             <div class="icons-footer">
-                <a href="https://www.snapchat.com/nl-NL" id="icon1" class="fa-brands fa-snapchat fa-lg" style="color: rgb(210, 255, 210);"></a>
-                <a href="https://www.instagram.com/?hl=nl" id="icon2" class="fa-brands fa-instagram fa-lg" style="color: rgb(210, 255, 210);"></a>
-                <a href="https://nl-nl.facebook.com/" id="icon3" class="fa-brands fa-facebook fa-lg" style="color: rgb(210, 255, 210);"></a>
+                <a href="https://www.snapchat.com/nl-NL" target="_blank" id="icon1" class="fa-brands fa-snapchat fa-lg" style="color: rgb(210, 255, 210);"></a>
+                <a href="https://www.instagram.com/?hl=nl" target="_blank" id="icon2" class="fa-brands fa-instagram fa-lg" style="color: rgb(210, 255, 210);"></a>
+                <a href="https://nl-nl.facebook.com/" target="_blank" id="icon3" class="fa-brands fa-facebook fa-lg" style="color: rgb(210, 255, 210);"></a>
             </div>
         </div>
 
         <div id="closing">
-            <a href="#">Privacyverklaring</a>
-            <a href="#">Algemene voorwaarden</a>
-            <a href="#">Cookiebeleid</a>
-            <a href="#">Contact</a>
+            <a href="https://www.google.com/search?q=privacyverklaring&sca_esv=571571458&sxsrf=AM9HkKmRZe7a7Vv8habrvb3p3jkqcFywdQ%3A1696693890678&ei=gn4hZZD6KKKO9u8PrZmmuAQ&ved=0ahUKEwiQw5WlpeSBAxUih_0HHa2MCUcQ4dUDCBA&uact=5&oq=privacyverklaring&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXByaXZhY3l2ZXJrbGFyaW5nMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADSOoIUOIEWJUHcAF4AZABAJgBLqABrgGqAQE0uAEDyAEA-AEBwgIHECMYigUYJ8ICBRAAGIAEwgIIEAAYywEYgATiAwQYACBBiAYBkAYI&sclient=gws-wiz-serp" target="_blank">Privacyverklaring</a>
+            <a href="https://www.google.com/search?q=algemene+voorwaarden&sca_esv=571571458&sxsrf=AM9HkKlwUqy3Aq_Vm8ptPNAr0nW6-xaRMA%3A1696693750383&source=hp&ei=9n0hZbDKE5GI9u8Pzo-GsAI&iflsig=AO6bgOgAAAAAZSGMBqVvEh6vJ3FEehU3eFDzB1ONAdPa&oq=algemene+voorwa&gs_lp=Egdnd3Mtd2l6Ig9hbGdlbWVuZSB2b29yd2EqAggAMgUQABiABDIFEAAYgAQyCBAAGMsBGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYywEYgAQyBRAAGIAEMgUQABiABEjYI1DTBFjXGnACeACQAQGYAVigAa0HqgECMTW4AQHIAQD4AQGoAgrCAgcQIxjqAhgnwgIHECMYigUYJ8ICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQLhiABBixAxiDAcICDhAuGIAEGLEDGMcBGNEDwgILEC4YgwEYsQMYgATCAgwQIxiKBRgnGEYY_wHCAgQQIxgnwgIHEAAYigUYQ8ICCxAuGIoFGLEDGIMBwgIHEC4YigUYQ8ICCBAuGLEDGIAEwgINEAAYigUYsQMYgwEYQ8ICChAuGLEDGIoFGEPCAggQABiABBixAw&sclient=gws-wiz" target="_blank">Algemene voorwaarden</a>
+            <a href="https://www.google.com/search?q=cookiebeleid&sca_esv=571571458&sxsrf=AM9HkKmbmQmv4CxBU7ZYPp2MYyXluJy8AA%3A1696693892967&ei=hH4hZZjLOvmH9u8PhKWB4Aw&ved=0ahUKEwiYnaGmpeSBAxX5g_0HHYRSAMwQ4dUDCBA&uact=5&oq=cookiebeleid&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGNvb2tpZWJlbGVpZDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgQQABgeMgQQABgeMgQQABgeMgYQABgeGA8yBhAAGB4YD0jOHlAAWI0UcAB4AZABAJgBXaABmQaqAQIxMrgBA8gBAPgBAcICDBAjGIoFGBMYgAQYJ8ICBxAjGIoFGCfCAgQQIxgnwgIIEAAYgAQYsQPCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIoFGLEDGIMBwgIOEC4YgAQYsQMYxwEY0QPCAgsQABiABBixAxiDAcICCxAuGIAEGMcBGK8BwgIFEC4YgATCAgsQABiKBRixAxiDAcICCxAuGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEYrwHCAiAQLhiABBixAxiDARjHARjRAxiXBRjcBBjeBBjgBNgBAcICCBAuGIAEGLEDwgINEC4YgAQYxwEY0QMYCsICGhAuGIAEGLEDGIMBGJcFGNwEGN4EGOAE2AEBwgIIEAAYywEYgATCAggQLhjLARiABMICDhAuGMsBGIAEGMcBGNEDwgIKEAAYywEYgAQYCsICHRAuGMsBGIAEGMcBGNEDGJcFGNwEGN4EGOAE2AEBwgINEC4YgAQYxwEYrwEYCuIDBBgAIEGIBgG6BgYIARABGBQ&sclient=gws-wiz-serp" target="_blank">Cookiebeleid</a>
+            <a href="https://www.google.com/search?q=contact&sca_esv=571571458&sxsrf=AM9HkKmjd13jM-8D5PLClpmX3XN5HE69JQ%3A1696693940050&ei=tH4hZeO-AqSp9u8P7_yAEA&ved=0ahUKEwjj6Nq8peSBAxWklP0HHW8-AAIQ4dUDCBA&uact=5&oq=contact&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2NvbnRhY3QyCBAAGMsBGIAEMgsQABiABBixAxiDATIIEC4YywEYgAQyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYywEYgAQyBRAAGIAESIMIUABY9AZwAHgBkAEAmAGHAaABsQSqAQM2LjG4AQPIAQD4AQHCAgcQIxiKBRgnwgIMECMYigUYExiABBgnwgIHEAAYigUYQ8ICDRAuGIoFGMcBGNEDGEPCAhEQLhiABBixAxiDARjHARjRA8ICDhAuGIAEGLEDGMcBGNEDwgILEC4YgAQYxwEYrwHCAgQQIxgnwgILEC4YigUYsQMYgwHCAgsQLhiABBixAxiDAcICCxAuGIAEGMcBGNEDwgIIEAAYgAQYyQPCAggQABiKBRiSA8ICCxAAGIoFGLEDGIMBwgILEAAYgAQYsQMYyQPiAwQYACBBiAYB&sclient=gws-wiz-serp" target="_blank">Contact</a>
         </div>
 
     </footer>
