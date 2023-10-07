@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+      </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/840059a757.js" crossorigin="anonymous"></script>
     <title>frontend-eindopdracht Daan Friederich</title>
 </head>
 
 <body>
     <nav>
-        <div class="nav-logo">
-            <a href="#">Link</a>
-        </div>
+            <a id="moto" href="https://www.motorola.com/nl/">
+                <img id="moto-logo" src="images/motorola-logo.png" alt="motorola-logo">
+            </a>
         <div class="nav-links">
             <div class="nav-regular">
                 <a href="#">Link</a>
@@ -29,7 +34,7 @@
     <header>
         <div class="headline">
             <h1>3 nieuwe smartphones zijn gereleased!</h1>
-            <article>van apple tot samsung: wooohoooooooo crazyyyyyyyyyyy Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt voluptatum, modi accusantium alias nemo harum omnis corporis delectus architecto aliquid possimus qui ad laboriosam eaque vel corrupti quae tempore.</article>
+            <p>van apple tot samsung: wooohoooooooo crazyyyyyyyyyyy Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt voluptatum, modi accusantium alias nemo harum omnis corporis delectus architecto aliquid possimus qui ad laboriosam eaque vel corrupti quae tempore.</p>
         </div>
         <div class="nav-bold">
             <a href="#">Link</a>
@@ -47,6 +52,7 @@
                     <img src="images/15promax.jpg" alt="pic-article-1">
                 </div>
                 <h3>Iphone 15 pro max</h3>
+                <div class="stars">&starf; &starf; &star; &star; &star;</div> 
                 <p>Wat is er veranderd aan de iphone 15 pro max ten opzichte van zijn voorganger? Voor specs, review en camera samples moet je hier zijn.</p>
                 <a href="#">Bekijk</a>
             </article>
@@ -55,6 +61,7 @@
                     <img src="images/edge40pro.jpg" alt="pic-article-2">
                 </div>
                 <h3>Motorola edge 40 pro</h3>
+                <div class="stars">&starf; &starf; &starf; &starf; &starf;</div> 
                 <p>Wil je meer over de razendsnelle Motorola edge 40 pro weten? klik dan op bekijk voor alle specs en de meest recente updates over dit toestel.</p>
                 <a href="#">Bekijk</a>
             </article>
@@ -63,15 +70,104 @@
                     <img src="images/s23ultra.webp" alt="pic-article-3">
                 </div>
                 <h3>Samsung galaxy s23 ultra</h3>
+                <div class="stars">&starf; &starf; &starf; &star; &star;</div> 
                 <p>Is de Samsung galaxy s23 ultra de beste Android smartphone van 2023? Leer meer!</p>
                 <a href="#">Bekijk</a>
             </article>
         </div>
 
     </main>
+    <div id="form-container-container">
+    <div id="form-container">
+        <h2 id="form">Aanmelden</h2>
+        <form action="#">
+            <div class="next-to">
+                <div class="formfield">
+                    <label for="first-name">Voornaam</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Voornaam" required>
+                </div>
+                <div class="formfield">
+                    <label for="last-name">Achternaam</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Achternaam" required>
+                </div>
+            </div>
+            <div class="whole-width">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="next-to">
+                <div class="formfield">
+                    <label for="living-place">Woonplaats</label>
+                    <input type="text" id="living-place" name="living-place" placeholder="Woonplaats" required>
+                </div>
+                <div class="formfield">
+                    <label for="birthdate">Datum</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+            </div>
+                <div class="whole-width">
+                <label for="phones">Kies een smartphone</label>
+                    <select id="phones" name="phones">
+                        <option value="" disabled selected>Kies een smartphone</option>
+                        <option value="moto">Motorola edge 40 pro</option>
+                        <option value="iphone">Apple Iphone 15 pro max</option>
+                        <option value="samsung">Samsung galaxy s23 ultra</option>
+                    </select>
+                </div>
+                <div class="whole-width">  
+                    <label for="message">Bericht</label>
+                    <input type="text" id="message" name="message">
+                </div>
+                
+                <label for="newsletter">Inschijven voor nieuwsbrief?</label>
+                
+                <div class="radio-buttons">
+                    <input type="radio" id="no" name="newsletter" value="no">
+                    <label for="no">Nee</label>
+                
+                    <input type="radio" id="yes" name="newsletter" value="yes">
+                    <label for="yes">Ja</label>
+                </div>
+                <input type="checkbox" id="terms" name="terms" value="terms">
+                <label for="terms">Ik ga akkoord met de voorwaarden</label>
+                
+                <div id="submit-button"> 
+                    <button type="submit">Aanmelden</button>
+                </div>
 
+                
+    </div>
+        
+
+
+        </form>
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </form> 
     <footer>
+        <div class="column-footer">
+            <img src="" alt="">
+            <a id="icon0" class="fa-solid fa-phone fa-lg" style="color: rgb(210, 255, 210);"></a>
+            <p>Copyright 2023 Daan</p>
+            <div class="icons-footer">
+                <a href="https://www.snapchat.com/nl-NL" id="icon1" class="fa-brands fa-snapchat fa-lg" style="color: rgb(210, 255, 210);"></a>
+                <a href="https://www.instagram.com/?hl=nl" id="icon2" class="fa-brands fa-instagram fa-lg" style="color: rgb(210, 255, 210);"></a>
+                <a href="https://nl-nl.facebook.com/" id="icon3" class="fa-brands fa-facebook fa-lg" style="color: rgb(210, 255, 210);"></a>
+            </div>
+        </div>
 
+        <div id="closing">
+            <a href="#">Privacyverklaring</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Cookiebeleid</a>
+            <a href="#">Contact</a>
+        </div>
 
     </footer>
     
