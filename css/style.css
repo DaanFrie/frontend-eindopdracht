@@ -340,10 +340,6 @@ footer p {
 }
 
 
-
-
-
-
 @media (max-width: 480px) {
 
 
@@ -483,11 +479,20 @@ footer p {
         margin-left: 0;
     }
 
+    .icons-footer {
+        gap: 5vw;
+    }
+
     .nav-links a {
         font-size: 1rem;
     }
 
     #icon0 {
         margin-top: 3vh;
+    }
+
+    nav a:hover, main a:hover, header a:hover, #article-1:hover, #article-2:hover, #article-3:hover, #icon0:hover, #icon1:hover, #icon2:hover, #icon3:hover, #moto:hover, input:hover, button:hover, #phones:hover, #closing a:hover  {
+        transform: scale(1);
+        opacity: 1;
     }
 }
